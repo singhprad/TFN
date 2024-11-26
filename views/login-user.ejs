@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylesheets/login-usertheater.css">
+</head>
+<body>
+
+    <div class="image">
+        <img src="images/backgroundimage.jpeg" height="100%" width="100%">
+    </div>
+
+    <div class="name-logo">
+
+        <div class="nameOfSite">
+            <h3 id="mainName">THE FILM NOSTALGIA</h3>
+        </div>
+          
+    </div>
+
+
+    <div class="contain">
+            <div class="login-box" id="user-login">
+                <h2>user login</h2>
+                <form action="/login-user" method="post">
+                    <div class="input-box">
+                        <input type="text" required name="username">
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" required name="password">
+                        <label>Password</label>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="signup">
+                    <a href="/signup-user">sign up</a>
+                </div>
+            </div>
+    </div>
+        
+</body>
+</html>

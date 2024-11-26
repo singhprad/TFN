@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/signup-usertheater.css">
+</head>
+<body>
+    <div class="image">
+        <img src="images/backgroundimage.jpeg" height="100%" width="100%">
+    </div>
+
+    <div class="name-logo">
+
+        <div class="nameOfSite">
+            <h3 id="mainName">THE FILM NOSTALGIA</h3>
+        </div>
+          
+    </div>
+
+
+    <div class="contain">
+            <div class="login-box" id="user-login">
+                <h2>theater signup</h2>
+                <form action="/signup-theater" method="post">
+                    <div class="input-box">
+                        <input type="text" required name="username">
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" required name="email">
+                        <label>email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" required name="password">
+                        <label>Password</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" required name="theatername">
+                        <label>theater name</label>
+                    </div>
+                    <button type="submit">signup</button>
+                </form>
+                <div class="signup">
+                    <a href="/login-theater">sign in</a>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

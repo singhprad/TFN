@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+
+}
+
+.back{
+    margin: 2rem 1rem 2rem 1rem;
+    border: 1px solid black;
+    border-radius: 20%;
+    
+}
+
+.back a{
+    border-radius: 10%;
+    padding: 1rem;
+    background-color: #474747bb; 
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.back a:hover{
+    background-color: #b3b3b3;
+    color: #000000;
+}
+
+.container{
+    width: 100%;
+}
+
+.topcard{
+    display: flex;
+    margin: 1rem;
+    background-color: #474747bb;
+    border-radius: 25px;
+}
+
+.topimage{
+    height: 15rem;
+    width: 15rem;
+    
+}
+
+.topimage img{
+    border-radius: 25px 0px 0px 25px;
+}
+
+.topdetails{
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details{
+    width: 80%;
+    margin-left: 1rem;
+    color: #ffffff;
+    height: 11rem;  
+    font-size: medium;
+}
+
+.vote{
+
+    margin: 1rem;
+    align-items:center ;
+}
+
+.vote button{
+    background-color: #bd0000ab;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.container :hover{
+    background-color: #555555;
+}
+
+.vote button:focus{
+    background-color: #4dec55b2;
+}

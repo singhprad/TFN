@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #2e2e2e;
+
+}
+
+.nevbar{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000000;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 2rem;
+    height: 2rem;
+    width: 6rem;
+    /* background-color: #db0000; */
+}
+
+.name{
+    text-align: center;
+    margin-left: 18rem;
+    height: 2rem;
+    width: 28rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.buttons{
+    height: 5rem;
+    /* background-color: #b90d0d; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.about{
+    margin: 5px;
+    height: 2rem;
+    background-color: #474747bb;
+    border-radius: 50px 50px;
+    text-align: center;
+}
+
+.about a{
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.backgroundimage{
+    width: 100%;
+    opacity: 0.7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.backgroundimage img{
+    opacity: 0.4;
+}
+
+
+.options{
+    position: absolute;
+    top: 12rem;
+    margin: 4rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.vote{
+    margin: 2rem;
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    box-shadow: 0px 0px  15px 10px #000000;
+}
+
+
+.book{
+    margin: 2rem;
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    box-shadow: 0px 0px  15px 10px #000000;
+    
+}
+
+
+.option-text {
+    width: 100%;
+    background-color: #ffffff70;
+    position: absolute;
+    color: #831010;
+    top: 6rem;
+    text-align: center;
+    font-size:xx-large;
+    
+}
+
+.options a{
+    text-decoration: none;
+    color: #831010;
+    font-size: 5rem;
+}
+
+.options :hover{
+    background-color: #000000;
+    box-shadow: 0px 0px 15px 10px #000000;
+}
+
+
+
+
+
+.copyrights{
+    height: 100px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: #0f1111;
+    color: #dddddd;
+    font-size: 14px;
+    font-weight: 200;
+    border-top: 1px solid #555555;
+
+}

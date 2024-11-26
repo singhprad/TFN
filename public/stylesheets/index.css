@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+
+}
+
+.nevbar{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000000;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 2rem;
+    height: 2rem;
+    width: 6rem;
+    background-color: #db0000;
+}
+
+.name{
+    
+    height: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+
+.about{
+    margin-right: 2rem;
+    height: 2rem;
+    width: 6rem;
+    background-color: #db0000;
+    border-radius: 50px 50px;
+    text-align: center;
+}
+
+.about a{
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.backgroundimage{
+    width: 100%;
+    opacity: 0.9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.backgroundimage img{
+    opacity: 0.4;
+}
+
+.backgroundimage-text{
+    height: 20rem;
+    width: 100%;
+    position: absolute;
+    color: #ffffff;
+    top: 7rem;
+    text-align: center;
+    font-size:xx-large;
+    transition: width 2s;
+    line-height: 4rem;
+
+}
+
+.login{
+    height: 3rem;
+    width: 23rem;
+    background-color: #db00009a;
+    border-radius: 50px 50px;
+    text-align: center;
+}
+
+.login a{
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.user{
+    position: absolute;
+    top: 23rem;
+}
+
+.theater{
+    position: absolute;
+    top: 27rem;
+}
+
+.options{
+    margin: 4rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.choose{
+    margin-left: 5rem;
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    border-radius: 15px 50px;
+
+}
+
+
+.vote{
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+}
+
+
+.book{
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+}
+
+.enjoy{
+    margin-right: 5rem;
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    
+}
+
+.options img{
+    opacity: 0.6;
+    border-radius: 15px 50px;
+}
+
+.option-text{
+    width: 100%;
+    background-color: #ffffff70;
+    position: absolute;
+    color: #831010;
+    top: 6rem;
+    text-align: center;
+    font-size:xx-large;
+    
+}
+
+
+
+.footer-panel1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #374444;
+    
+}
+
+.footer-panel1 a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.copyrights{
+    height: 100px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: #0f1111;
+    color: #dddddd;
+    font-size: 14px;
+    font-weight: 200;
+    border-top: 1px solid #555555;
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="back">
+        <a href="profile-theater"><i class="fa fa-arrow-left"></i>back</a>
+    </div>
+    <div class="container">
+    <% if (movies.length === 0) { %>
+        <p>No movies available.</p>
+    <% } else { %>
+        <% movies.forEach(movie => { %>
+
+           
+                <div class="topcard">
+                    <div class="topimage">
+                        <% if (movie.image && movie.image.data) { %>
+                            <img src="data:<%= movie.image.contentType %>;base64,<%= movie.image.data.toString('base64') %>" alt="Movie Image">
+                        <% } else { %>
+                            <p>No image available</p>
+                        <% } %>
+                    </div>
+        
+                    <div class="topdetails">
+                        <div class="name">
+                            <h3><%= movie.moviename %></h3>
+                        </div>
+
+                        <div class="cast">
+                        <ul>
+        
+                            <li>Director : <%= movie.director %></li>
+                            <li> Writer   : <%= movie.writer %></li>
+                            <li>Stars    : <%= movie.stars.join(', ') %></li>
+                            <li>IMDb     : <%= movie.imdbrating %></li>
+                        </ul>
+                        </div>
+
+                        <div class="summary">
+                            summary  : <%= movie.summary %>
+                        </div>
+
+                        <h3>Votes    : <%= movie.vote %></h3>
+                    </div>
+                </div>
+                <% }) %>
+                <% } %>
+            </div>
+
+ 
+
+<!-- 
+    <div class="container">
+        <div class="topcard">
+            <div class="topimage">
+                <img src="images/op1.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="topdetails">
+                <div class="name">
+                    <h3>Jhon Wick</h3>
+                </div>
+
+                <div class="cast">
+<pre>
+
+Director   : Chad Stahelski
+Writer      : Derek Kolstad
+Stars       : Keanu ReevesMichael NyqvistAlfie Allen
+IMDb       : 7.4/10
+
+</pre>
+                </div>
+
+                <div class="summary">
+                    summary  : Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eum, mollitia iure. Cumque, culpa? Hic reiciendis quos, 
+                    repudiandae iste perferendis eum, sed temporibus voluptatem 
+                    fugit ipsum placeat? Tenetur consequatur adipisci qui!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto blanditiis quos, libero sequi vero voluptates accusamus, quae illum aut vitae, id aliquid quis laboriosam dicta earum doloremque quisquam corporis odio. lore
+                </div>
+                <h3>Votes    : 2000</h3>
+            </div>
+        </div>
+    </div> -->
+
+
+
+</body>
+</html>

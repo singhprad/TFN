@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="back">
+        <a href="profile-user"><i class="fa fa-arrow-left"></i>back</a>
+    </div>
+
+    <% if (movies.length === 0) { %>
+        <p>No movies available.</p>
+    <% } else { %>
+        <% movies.forEach(movie => { %>
+
+        <div class="container">
+            <div class="name ab">
+                <p>Movie: <%= movie.moviename %></p>
+            </div>
+            <div class="theatername ab">
+                <p>theater : <%= movie.theatername %></p>
+            </div>
+            <div class="date ab">
+                <p>date : <%= movie.date %></p>
+            </div>
+            <div class="btn">
+                <a href="seat-booking">Book</a>
+            </div>
+        </div>
+
+    <% }) %>
+    <% } %>
+
+
+</body>
+</html>
